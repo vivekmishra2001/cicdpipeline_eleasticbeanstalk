@@ -1,16 +1,16 @@
 version: 0.2
 phases:
-  pre-build:
+  pre_build:
     commands:
       - echo"enter in pr-build"
     build:
-      commaands:
+      commands:
         - echo "enter build phase"
         - mvn clean prepare-package war:explode
-  post-build:
+  post_build:
     commands:
       - echo "enter in post build"
       - mv target/deploy ./
-artifects:
+artifacts:
   files:
     - deploy/**/*
