@@ -12,4 +12,10 @@ public class HelloController {
     public String hello(){
         return "Hello Vivek Mishra first Project";
     }
+
+    @GetMapping("/bhisham")
+    public String getTempraure(){
+
+        return "This is temprature";
+    }
 }
