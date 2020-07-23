@@ -10,6 +10,3 @@ phases:
   post_build:
     commands:
       - echo "enter in post build"
-artifacts:
-  files:
-    - deploy/**/*
